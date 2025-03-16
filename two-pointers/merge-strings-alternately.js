@@ -14,11 +14,7 @@ var mergeAlternately = function(word1, word2) {
        word2=word2.slice(0,word1.length)
     }
      for(var i=0;i<word1.length;i++){
-            if(word1[i]>word2[i]){
-                word+=word2[i]+word1[i];
-            }else{
                 word+=word1[i]+word2[i];
-            }
         }
         word+=more;
         return word;
