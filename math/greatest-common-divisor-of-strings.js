@@ -10,12 +10,8 @@ var gcdOfStrings = function(str1, str2) {
     return gcd(b, a % b);
 }
     let x="";
-    let len1=str1.length;
-    let len2=str2.length;
-    let check1=str1+str2;
-    let check2 =str2+str1;
-    if(check1==check2){
-       let g= gcd(len1,len2);
+    if((str1+str2)==(str2+str1)){
+       let g= gcd(str1.length,str2.length);
        x=str1.slice(0,g)
     }
 
