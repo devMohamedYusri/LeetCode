@@ -5,7 +5,7 @@
 var reverseVowels = function(s) {
     const vowels = s.match(/[aeiou]/gi);
     const all = new Set(['a', 'e', 'i', 'o', 'u']);
-    const reversed=vowels.reverse();
+    const reversed=vowels?.reverse();
     const strArray = Array.from(s);
 
     let result="";
