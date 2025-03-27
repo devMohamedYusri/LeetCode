@@ -16,10 +16,10 @@ var isValid = function(s) {
         }else{
            const top=stack.pop();
            if(top!==bracketPairs[i]){
-            return false
+            return false;
            }
         }
     }
 
-    return true;
+    return stack.length === 0;
 };
