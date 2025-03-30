@@ -10,10 +10,10 @@
  * @return {ListNode}
  */
 var deleteDuplicates = function(head) {
-    if(head){
-        return null;
-    }
-    const dummy=new ListNode(head.val);
+    // if(head){
+    //     return null;
+    // }
+    const dummy=new ListNode(head?.val);
     let current=dummy;
     while(head){
                     console.log("out",head);
