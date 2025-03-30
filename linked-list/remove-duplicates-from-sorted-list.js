@@ -15,7 +15,7 @@ var deleteDuplicates = function(head) {
     // }
     const dummy=new ListNode(head?.val);
     let current=dummy;
-    while(head){
+    while(head!==null){
                     console.log("out",head);
         if(current.val==head.val){
             head=head.next;
